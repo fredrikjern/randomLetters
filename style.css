@@ -27,15 +27,37 @@
     margin: 5px;
     transition: 1s ease-in-out;
   }
+  .flex-button {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    height: 100px;
+    margin: auto;
+    margin-top: 0px;
+  }
   .button {
     background: rgb(251, 250, 250);
     border: 1px solid rgb(127, 123, 123);
-    width: 400px;
+    width: 250px;
     height: 100px;
     margin: auto;
   }
   .button:hover {
     background-color: rgb(246, 243, 238);
+  }
+  .return {
+    background: rgb(251, 250, 250);
+    border: 1px solid rgb(127, 123, 123);
+    width: 150px;
+    height: 100px;
+    margin: auto;
+  }
+  .return:hover {
+    background-color: rgb(246, 243, 238);
+  }
+  h2 {
+    text-align: center;
+    margin-top: 30px;
   }
   .button h1 {
     text-align: center;

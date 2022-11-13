@@ -15,7 +15,17 @@ function randomLetters() {
         item.classList.add(`order${randomArr[i]}`) // ger en random klass med order så dom sorterar om sig.
     });  
 };
+function returnLetters() {
+    let items = document.querySelectorAll(".item"); // Alla boxar i flexbox-containern har klassen item
+    items.forEach((item, i) => {
+        item.className = "item"; //skriver över hela classListen med bara "item"
+    });  
+};
 let button = document.getElementById("button");
 button.addEventListener("click", ()=>{
     randomLetters();
+});
+let returnBtn = document.getElementById("return");
+returnBtn.addEventListener("click", ()=>{
+    returnLetters();
 });
