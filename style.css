@@ -1,0 +1,71 @@
+*, html, body {
+    height: 100%;
+    border: 0px;
+    margin: 0px;
+    color: rgb(0, 7, 14);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+  }
+  .flexbox {
+    background: rgb(251, 250, 250);
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(127, 123, 123);
+  }
+  .item {
+    width: 40px;
+    height: 40px;
+    align-self: center;
+    display: inline-flex;
+    border: 1px solid rgb(127, 123, 123);
+    margin: 5px;
+    transition: 1s ease-in-out;
+  }
+  .button {
+    background: rgb(251, 250, 250);
+    border: 1px solid rgb(127, 123, 123);
+    width: 400px;
+    height: 100px;
+    margin: auto;
+  }
+  .button:hover {
+    background-color: rgb(246, 243, 238);
+  }
+  .button h1 {
+    text-align: center;
+    margin-top: 30px;
+  }
+  span {
+    margin: auto;
+  }
+  .item.order1 {
+    transform: rotate3d(0, 1, 0, 180deg);
+    order: 1;  
+  }
+  .item.order2 {
+    transform: rotate3d(0, 1, 0, 360deg);
+    order: 2;
+  }
+  .item.order3 {
+    transform: rotate3d(1, 0, 0, 180deg);
+    order: 3;
+  }
+  .item.order4 {
+    transform: rotate3d(0, 1, 0, 180deg);
+    order: 4;
+  }
+  .item.order5 {
+    transform: rotate3d(0, 1, 0, 360deg);
+    order: 5;
+  }
+  .item.order {
+    transform: rotate3d(0, 1, 0, 720deg);
+    order: 6;
+  }
+
